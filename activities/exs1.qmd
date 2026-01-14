@@ -1,0 +1,75 @@
+---
+title: "In-Class Exercises #1"
+subtitle: "SDS 270: Programming for Data Science in R, Spring 2026"
+author: "Jericho Lawson"
+editor: source
+date: last-modified
+---
+
+## Introduction
+
+These exercises are two-fold: to get you familiar with the layout of these assignments and to review functionality of (atomic) vectors in R.
+
+There are two types of vectors in R: lists and atomic vectors. For now, we shift our focus to atomic vectors, which are defined by having the same type for all elements within them.
+
+This means that if we attempt to create a simple vector of characters and doubles, such as:
+
+```{r}
+test <- c("a", 1, "c", 2)
+```
+
+R will automatically coerce the least-flexible types in the vector to the most flexible, meaning that our `test` vector will consist of solely character types. The exercises below will help you develop a fundamental breakdown of atomic vectors and their usage. To do so, we will analyze a simple dataframe.
+
+## Diamonds Data Frame
+
+We will look at the `starwars` dataframe from the `dplyr` package, which contains characters from the first two trilogies of Star Wars movies. Use the code below to load the `starwars` dataframe in:
+
+```{r}
+library(dplyr)
+data(starwars)
+```
+
+## Questions
+
+::: {.callout-important}
+
+## Question 1
+
+Provide at least two reasons why we would want to have a data structure that strictly contains elements of the same type. 
+
+:::
+
+::: {.callout-important}
+
+## Question 2
+
+Extract the `height` column from the `starwars` dataframe with `starwars$height` and assign it to `height`. Determine its type and whether it is a valid type given what the column stands for.
+
+:::
+
+::: {.callout-important}
+
+## Question 3
+
+Perform three operations using the `height` and `mass` columns from the `starwars` dataframe.
+
+:::
+
+::: {.callout-important}
+
+## Question 4
+
+For each R type (i.e. logical, integer, character, double), provide examples of real-world data that would be best suited to that R type and justify your choice.
+
+:::
+
+::: {.callout-important}
+
+## Question 5
+
+Create an R object of an atomic vector of at least 5 elements based on what was discussed in Q4. Then, add an attribute of your choice to the vector.
+
+:::
+
+When finished, commit and push this file to your SDS 270 repository.
+

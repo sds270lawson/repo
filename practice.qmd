@@ -1,0 +1,27 @@
+---
+title: "Practice"
+author: "YOUR NAME HERE"
+date: "DATE HERE"
+editor:
+  mode: source
+---
+
+If you're able to see this file in RStudio (and edit it), congratulations! Please work on two questions below.
+
+###### Question 1
+
+Using the `paste()` function, input "Hello World" within the parentheses and write out the code below in the gray chunk.
+
+```{r}
+
+```
+
+###### Question 2
+
+In the gray chunk below, write out and run a simple mathematical calculation. This can be with addition, subtraction, etc. using similar input that you would put in a traditional calculator.
+
+```{r}
+
+```
+
+Once finished, please save the document by clicking the Save button above. Then, return to the Tech Setup instructions to learn how to commit and push you code. 
